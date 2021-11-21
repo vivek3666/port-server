@@ -1,0 +1,22 @@
+{
+    "name": "api",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "start": "node ./app.js",
+        "test": "nodemon ./app.js"
+    },
+    "dependencies": {
+        "bcrypt": "^5.0.1",
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "jsonwebtoken": "^8.5.1",
+        "mongodb": "^4.1.0",
+        "mongoose": "^5.13.7",
+        "multer": "^1.4.3",
+        "nodemon": "^2.0.14",
+        "path": "^0.12.7",
+        "slugify": "^1.6.0"
+    }
+}
