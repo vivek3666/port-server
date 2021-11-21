@@ -6,13 +6,15 @@ const cors = require("cors");
 
 // routes here:
 
-const authroutes = require("./routes/auth");
+const authRoutes = require("./app/modules/authorization/auth.routes");
+const momentRoutes = require("./app/modules/moments/moments.routes");
 
 app.use(express.json({ extended: false, type: "application/json" }));
 
 app.use(cors());
 
-app.use("/api", authroutes);
+app.use("/api", authRoutes);
+app.use("/api", momentRoutes);
 
 const listener = app.listen(process.env.PORT || 3000, () => {
   console.log("Your app is listening on port " + listener.address().port);
