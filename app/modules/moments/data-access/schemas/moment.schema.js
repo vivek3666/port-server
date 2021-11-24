@@ -3,8 +3,8 @@ const mongoose = require("mongoose");
 const momentSchema = new mongoose.Schema(
     {
         profileImage: {
-            type: Array,
-            default:[]
+            type: String,
+            required: true
         },
         title: {
             type: String,
